@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-5</title>
+</head>
+<body>
+    <h1 id="age"></h1>
+
+    <script>
+        var age = parseInt(prompt("Enter the month "));
+
+        if (age <= 5) {
+            document.getElementById('age').innerHTML = "You are Toddler right now."
+        }else if (age >5 && age <= 13 ){
+            document.getElementById('age').innerHTML = "You are Kid right now."
+        }else if(age >13 && age <= 17){
+            document.getElementById('age').innerHTML = "You are Teenager right now."
+        }else if(age > 17 && age <= 60) {
+            document.getElementById('age').innerHTML = "You are Young right now."
+        }else if(age > 60){
+            document.getElementById('age').innerHTML = "You are Oldage right now."
+        }
+    </script>
+</body>
+</html>

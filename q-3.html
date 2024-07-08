@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-3</title>
+</head>
+<body>
+    <h1 id="value"></h1>
+
+    <script>
+        var p = parseInt(prompt("Enter The Principle amount"));
+        var n = parseInt(prompt("Enter The No. of Years"));
+        var r;
+
+        if (n > 3) {
+            if (n <= 5) {
+                r = 3;
+            } else if (n <= 8) {
+                r = 5;
+            } else if (n <= 12) {
+                r = 12;
+            } else {
+                r = 15;
+            }
+        } else {
+            document.getElementById('value').innerHTML = "Enter more than 2 years."
+        }
+
+        document.getElementById('value').innerHTML = "Total interest with principle amount = " + p * r * n /100;
+    </script>
+</body>
+</html>
